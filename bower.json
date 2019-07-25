@@ -1,11 +1,9 @@
 {
   "name": "to-ms",
-  "main": "dest/to-ms.js",
+  "main": "dist/to-ms.js",
   "version": "1.1.0",
   "homepage": "https://github.com/shuvalov-anton/to-ms",
-  "authors": [
-    "Shuvalov Anton <anton_shuvalov@me.com>"
-  ],
+  "authors": ["Shuvalov Anton <anton_shuvalov@me.com>"],
   "description": "Tiny chained milliseconds creation util",
   "keywords": [
     "ms",

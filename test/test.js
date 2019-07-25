@@ -1,3 +1,5 @@
+const should = require("should");
+
 /* globals toMs, should, it, describe, window */
 
 'use strict';
@@ -11,7 +13,7 @@ if (isNode) { global.toMs = require('../'); }
 // End dependencies
 
 describe('to-ms', function () {
-  it('should be a Number', function() {
+  it('should be a Number', function () {
     toMs.should.be.a.Number;
   });
   describe('seconds()', function () {
@@ -134,9 +136,9 @@ describe('to-ms', function () {
       ms.should.be.equal(3 * 365 * 24 * 60 * 60 * 1000);
     });
   });
-  describe('chaining', function() {
+  describe('chaining', function () {
     var ms;
-    it('methods should chains', function() {
+    it('methods should chains', function () {
       ms = toMs
         .days(2)
         .hours(12)
@@ -144,7 +146,7 @@ describe('to-ms', function () {
         .seconds(15);
       ms.should.be.a.Number;
     });
-    it('singles shoulds chains too', function() {
+    it('singles shoulds chains too', function () {
       ms = toMs
         .day()
         .hour()
